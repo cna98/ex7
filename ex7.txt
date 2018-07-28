@@ -1,0 +1,29 @@
+
+//اعداد اول بین یک میلیون تا 10 میلیون را چاپ میکند
+
+package ex7;
+
+public class Ex7 {
+
+	public static void main(String[]args)
+	{
+		boolean result = true;
+		
+		for(int i = 1000000 ; i <=10000000 ; i++ )
+		{
+			for(int j = 2 ; j < i ; j++)
+			{
+				if(i % j == 0)
+				{
+					result = false;
+					break;
+				}
+			}
+			
+			if(result == true)
+				System.out.printf("%d\n" , i);
+		
+			
+		}
+	}
+}
